@@ -35,6 +35,18 @@ pip install -r requirments.txt
 ## Data
 [Dataset](https://www.kaggle.com/datasets/shashwatwork/fruitnet-indian-fruits-dataset-with-quality/data) from kaggle.
 
+To install the dataset just go to the dataset [link](https://www.kaggle.com/datasets/shashwatwork/fruitnet-indian-fruits-dataset-with-quality/data) and download it from the kaggle website. Then you need to extract the zip into the repos folder and rename the extraction folder `data`. 
+
+So the final structure should be: 
+
+```
+fruit-quality
+    data
+        Bad Quality_Fruits
+        Good Quality_Fruits
+        Mixed Quality_Fruits
+```
+
 ## Jupyter Notebooks
 - The `code.ipynb` contains the entire pipeline, from preprocessing, feature extraction, model training, to evaluation. It serves as a quick and interactive overview of the entire process, allowing for real-time execution and visualization of each step. Alternatively, we provide individual scripts for each stage of the pipeline in the subsequent sections. These scripts can be executed independently to perform specific tasks in the workflow.
 
