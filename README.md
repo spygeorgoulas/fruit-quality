@@ -29,7 +29,7 @@ git clone https://github.com/spygeorgoulas/fruit-quality.git
 cd fruit-quality
 python3 -m venv fruit-quality
 source fruit-quality/bin/activate
-pip install -r requirments.txt
+pip install -r requirements.txt
 ```
 
 ## Data
