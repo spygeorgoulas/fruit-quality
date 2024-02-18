@@ -40,7 +40,7 @@ Extract training and test features from the dataset folder and saves them at:
 
 
 ```bash
-fruit-quality$>python3 -m src.train_pipeline.pipeline -i 'data'
+python3 -m src.train_pipeline.pipeline -i 'data'
 ```
 `-i`: Path to dataset folder
 
