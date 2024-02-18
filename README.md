@@ -27,15 +27,31 @@ git clone https://github.com/spygeorgoulas/fruit-quality.git
 ```bash
 cd fruit-quality
 python3 -m vevn venv
-pip install -r requirments
+pip install -r requirments.txt
 ```
 
 ## Data
 [Dataset](https://www.kaggle.com/datasets/shashwatwork/fruitnet-indian-fruits-dataset-with-quality/data) from kaggle.
 
 ## Extract features
+Extract training and test features from the dataset folder and saves them at:
+- `fruit-quality/src/train_pipeline/features_train` 
+- `fruit-quality/src/train_pipeline/features_test` 
+
+
+```bash
+fruit-quality$>python3 -m src.train_pipeline.pipeline -i 'data'
+```
+`-i`: Path to dataset folder
 
 
 ## Training the model
+```bash
+python3 src/train_pipeline/train.py -train src/train_pipeline/features_train/ -test src/train_pipeline/features_test/
+```
+
+`-train`: Path to the train features folder
+
+`-test`: Path to the test features folder
 
 ## Testing the model
