@@ -74,3 +74,19 @@ python3 src/train_pipeline/train.py -train src/train_pipeline/features_train/ -t
 `-test`: Path to the test features folder
 
 ## Testing the model
+Run the demo code
+
+- Using input folder containing demo images(.png, .jpg)
+```bash
+python3 src/demo.py --mode images --input_folder src/demo_images_folder
+```
+- Using input folder containing features
+```bash
+python3 src/demo.py --mode features --input_folder src/demo_features_folder
+```
+
+`--mode`: 
+- images to read from folder containing images (type: .png, .jpg)
+- features to read from folder containing features
+
+`--input_folder`: path to the folder 
