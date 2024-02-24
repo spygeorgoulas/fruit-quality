@@ -92,7 +92,7 @@ python3 src/demo.py --mode features --input_folder src/demo_features_folder
 `--input_folder`: path to the folder 
 
 ## "Simulate" the raspberry demo
-Run the server (locally)
+Run the server (We can view the webpage at http://127.0.0.1:6060/home)
 
 ```bash
 python3 -m src.server.server
