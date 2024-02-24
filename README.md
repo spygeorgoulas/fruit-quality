@@ -90,3 +90,18 @@ python3 src/demo.py --mode features --input_folder src/demo_features_folder
 - features to read from folder containing features
 
 `--input_folder`: path to the folder 
+
+## "Simulate" the raspberry demo
+Run the server (locally)
+
+```bash
+python3 -m src.server.server
+```
+
+The raspberry captures an image and sends it using curl so we open a new terminal: 
+```bash
+curl -X POST -F "image=@image.jpg" http://127.0.0.1:6060/upload
+```
+Where `image.jpg` path to the image
+
+Then after a few seconds we can view in the webpage (http://127.0.0.1:6060/home) the image that we gave before as an input
